@@ -1,0 +1,276 @@
+:root{
+
+    scroll-padding-top: 4.225rem;
+}
+body{
+    background-color: #f0f0f0;
+}
+.black-bg{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0 , 0 , 0 , 0.8 )), to(rgba(0 , 0 , 0 , 0.8)));
+    background-image: -o-linear-gradient(rgba(0 , 0 , 0 , 0.8 ), rgba(0 , 0 , 0 , 0.8));
+    background-image: linear-gradient(rgba(0 , 0 , 0 , 0.8 ), rgba(0 , 0 , 0 , 0.8));
+}
+/* ///////  navbar  /////// */
+.nav-item .nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    -webkit-transition: width 300ms ease-in-out;
+    -o-transition: width 300ms ease-in-out;
+    transition: width 300ms ease-in-out;
+}
+.nav-item:hover .nav-link::before{
+    width: 50%;
+}
+.nav-item .nav-link.active::before{
+    width: 50%;
+}
+/* ////////  header  ///////// */
+.hero-bg{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0 , 0 , 0 , 0.6 )), to(rgba(0 , 0 , 0 , 0.6))) ,url(../images/hero-bg.jpg);
+    background-image: -o-linear-gradient(rgba(0 , 0 , 0 , 0.6 ), rgba(0 , 0 , 0 , 0.6)) ,url(../images/hero-bg.jpg);
+    background-image: linear-gradient(rgba(0 , 0 , 0 , 0.6 ), rgba(0 , 0 , 0 , 0.6)) ,url(../images/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header span{
+    display: inline-block;
+    overflow: hidden;
+}
+
+.header span:nth-of-type(1){
+    -webkit-animation: designer 12s infinite ;
+            animation: designer 12s infinite ;
+}
+
+.header span:nth-of-type(2){
+    -webkit-animation: developer 12s infinite ;
+            animation: developer 12s infinite ;
+}
+
+.header span:nth-of-type(3){
+    -webkit-animation: photographer 12s infinite;
+            animation: photographer 12s infinite;
+}
+
+.header span:nth-of-type(4){
+    -webkit-animation: freelancer 12s infinite ;
+            animation: freelancer 12s infinite ;
+}
+
+@-webkit-keyframes designer{
+    0%, 50%, 100%, 25%, 37.5%, 62.5%, 75%, 87.5%  
+    {width: 0px;}
+    12.5%
+    {width: calc(9* 22.20125px)}
+}
+
+@keyframes designer{
+    0%, 50%, 100%, 25%, 37.5%, 62.5%, 75%, 87.5%  
+    {width: 0px;}
+    12.5%
+    {width: calc(9* 22.20125px)}
+}
+
+@-webkit-keyframes developer{
+    0%, 25%, 50%, 100%, 75%,  62.5%, 87.5% 
+    {width: 0px;}
+    37.5%
+    {width: calc(10* 22.20125px)}
+}
+
+@keyframes developer{
+    0%, 25%, 50%, 100%, 75%,  62.5%, 87.5% 
+    {width: 0px;}
+    37.5%
+    {width: calc(10* 22.20125px)}
+}
+
+@-webkit-keyframes photographer{
+    0%, 25%, 50%, 100%, 75%,  37.5%, 87.5% 
+    {width: 0px;}
+    62.5%
+    {width: calc(15* 22.20125px)}
+}
+
+@keyframes photographer{
+    0%, 25%, 50%, 100%, 75%,  37.5%, 87.5% 
+    {width: 0px;}
+    62.5%
+    {width: calc(15* 22.20125px)}
+}
+
+@-webkit-keyframes freelancer{
+    0%, 25%, 50%, 100%, 75%,  37.5%, 62.5% 
+    {width: 0px;}
+    87.5%
+    {width: calc(11* 22.20125px)}
+}
+
+@keyframes freelancer{
+    0%, 25%, 50%, 100%, 75%,  37.5%, 62.5% 
+    {width: 0px;}
+    87.5%
+    {width: calc(11* 22.20125px)}
+}
+
+/* ///////  about  ///////// */
+ul{
+    list-style: none;
+}
+.progress{
+    background-color: #cde1f8;
+    margin: 0.25rem 0rem 2rem 0rem;
+}
+.skill .progress .progress-bar{
+    background-color: #0078ff;
+}
+.bg-white{
+    background-color: #fff;
+}
+.about-title::before{
+    content: "";
+    width: 100px;
+    background-color: #0078ff;
+    height: 3px;
+    position: absolute;
+    bottom: -12px;
+}
+/* //////////   services   //////////// */
+.title p::after{
+    content: "";
+    width: 50px;
+    background-color: #0078ff;
+    height: 3px;
+    position: absolute;
+    bottom: -12px;
+    right: 50%;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
+}
+.bg-dblue{
+    background-color: #0078ff;
+}
+.border-dblue{
+    -webkit-box-shadow: 0 0 0 10px #0078ff;
+            box-shadow: 0 0 0 10px #0078ff;
+}
+.bg-lblue{
+    background-color: #cde1f8;
+}
+.border-lblue{
+    border-color: #cde1f8;
+}
+.sevrices-card i{
+    -webkit-transition: color 500ms ease-in-out, 
+                background-color 500ms ease-in-out,
+                -webkit-box-shadow 500ms ease-in-out;
+    transition: color 500ms ease-in-out, 
+                background-color 500ms ease-in-out,
+                -webkit-box-shadow 500ms ease-in-out;
+    -o-transition: color 500ms ease-in-out, 
+                background-color 500ms ease-in-out,
+                box-shadow 500ms ease-in-out;
+    transition: color 500ms ease-in-out, 
+                background-color 500ms ease-in-out,
+                box-shadow 500ms ease-in-out;
+    transition: color 500ms ease-in-out, 
+                background-color 500ms ease-in-out,
+                box-shadow 500ms ease-in-out, 
+                -webkit-box-shadow 500ms ease-in-out;
+}
+.sevrices-card:hover i{
+    color: #fff;
+    background-color: #0078ff;
+    -webkit-box-shadow: 0 0 0 12px #cde1f8;
+            box-shadow: 0 0 0 12px #cde1f8;
+}
+/* ///////////  counter  //////////// */
+.counter{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0 , 120 , 255, 0.6)), to(rgba(0 , 120 , 255, 0.6))) ,url(../images/counters-bg.jpg);
+    background-image: -o-linear-gradient(rgba(0 , 120 , 255, 0.6), rgba(0 , 120 , 255, 0.6)) ,url(../images/counters-bg.jpg);
+    background-image: linear-gradient(rgba(0 , 120 , 255, 0.6), rgba(0 , 120 , 255, 0.6)) ,url(../images/counters-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.counter i{
+    -webkit-box-shadow: 0 0 0 10px #f0f0f0;
+            box-shadow: 0 0 0 10px #f0f0f0;
+    width: 32px;
+    height: 32px;
+}
+/* //////////// portfolio /////////// */
+.max-width-150{
+    max-width: 150px;
+}
+.card-image img{
+    -webkit-transition: scale 500ms ease-in-out;
+    -o-transition: scale 500ms ease-in-out;
+    transition: scale 500ms ease-in-out;
+}
+.portfolio-card:hover img{
+    scale: 1.4;
+}
+/* ///////////  carousel  ////////// */
+.carousel-section{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0 , 120 , 255, 0.6)), to(rgba(0 , 120 , 255, 0.6))) ,url(../images/overlay-bg.jpg);
+    background-image: -o-linear-gradient(rgba(0 , 120 , 255, 0.6), rgba(0 , 120 , 255, 0.6)) ,url(../images/overlay-bg.jpg);
+    background-image: linear-gradient(rgba(0 , 120 , 255, 0.6), rgba(0 , 120 , 255, 0.6)) ,url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/* //////  blog  ////// */
+.card-footer img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.w-fit{
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+.blog-card h3{
+    -webkit-transition: color 300ms ease-in-out;
+    -o-transition: color 300ms ease-in-out;
+    transition: color 300ms ease-in-out;
+}
+.blog-card h3:hover{
+    color: #0078ff;
+}
+
+/* ///////  contact  /////// */
+.contact{
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0 , 120 , 255, 0.6)), to(rgba(0 , 120 , 255, 0.6))) ,url(../images/overlay-bg.jpg);
+    background-image: -o-linear-gradient(rgba(0 , 120 , 255, 0.6), rgba(0 , 120 , 255, 0.6)) ,url(../images/overlay-bg.jpg);
+    background-image: linear-gradient(rgba(0 , 120 , 255, 0.6), rgba(0 , 120 , 255, 0.6)) ,url(../images/overlay-bg.jpg);
+    background-attachment: fixed;
+}
+.btn{
+    border-radius: 20px;
+    -webkit-transition: -webkit-box-shadow 300ms ease-in-out;
+    transition: -webkit-box-shadow 300ms ease-in-out;
+    -o-transition: box-shadow 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, -webkit-box-shadow 300ms ease-in-out;
+}
+.btn:hover{
+    -webkit-box-shadow: 0 0 0 5px #cde1f8;
+            box-shadow: 0 0 0 5px #cde1f8;
+}
+/* ///////////  ref arrow  //////////// */
+.w-20{
+    width: 20px;
+}
+.h-20{
+    height: 20px;
+}
